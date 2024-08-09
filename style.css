@@ -1,0 +1,280 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    position: relative;
+}
+
+.navbar {
+    background: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.navbar h1 {
+    margin: 0;
+}
+
+.carrito-container {
+    position: relative;
+}
+
+.btn-carrito {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+.btn-carrito:hover {
+    color: #ddd;
+}
+
+.carrito-count {
+    position: absolute;
+    right: -2px;
+    background: #060ef0;
+    color: #fff;
+    border-radius: 50%;
+    padding: 0.3rem 0.6rem;
+    font-size: 0.9rem;
+    display: inline-block;
+}
+
+.carrito-dropdown {
+    position: absolute;
+    top: 60px; 
+    right: 0;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    max-width: 300px;
+    display: none; 
+}
+
+.carrito-dropdown h2 {
+    margin-top: 0;
+}
+
+#carrito-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#carrito-lista li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border-bottom: 1px solid #ddd;
+}
+
+#carrito-lista li button {
+    background: #dc3545;
+    border: none;
+    color: #fff;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#carrito-lista li button:hover {
+    background: #c82333;
+}
+
+/* Oculta el carrito */
+.oculto {
+    display: none;
+}
+
+.banner {
+    display: flex;
+    max-height: 350px;
+}
+
+.banner img {
+    max-width: 100%;
+}
+
+.productos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    width: 200px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 1rem;
+}
+
+.card h2 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.card p {
+    color: #666;
+}
+
+.card button {
+    background: #28a745;
+    border: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background: #218838;
+}
+.tjbanner {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}
+
+/* iconos */
+
+.container1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    font-size: 35px;
+    gap: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.iconos {
+    text-align: center;
+    padding: 5px;
+    width: 100%;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    margin: 0 10px;
+}
+
+.iconos p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center;
+}
+
+/* Media Query para pantallas menores a 800px */
+@media (max-width: 800px) {
+    .container1 {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .iconos {
+        flex: none;
+        width: 80%; 
+        margin: 10px 0; 
+    }
+}
+
+
+/* galeria footer */
+.galeria1 {
+    display: flex;
+    justify-content: center;
+}
+.galeria {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px; 
+    width: 100%;
+}
+
+.imagen {
+    flex: 1;
+    margin: 0 10px;
+    height: 500px; 
+    overflow: hidden;
+}
+
+.imagen img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Media Query para pantallas menores a 800px */
+@media (max-width: 800px) {
+    .galeria {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .imagen {
+        margin: 10px 0; 
+        width: 80%; 
+        height: auto;
+    }
+}
+
+
+/* footer content */
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer p {
+    margin: 10px 0;
+}
+
+.social-icons {
+    margin: 20px 0;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ddd;
+}
