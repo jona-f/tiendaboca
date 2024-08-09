@@ -156,9 +156,10 @@ header {
 .tjbanner {
     display: flex;
     justify-content: center;
+}
+.tjbanner img {
     max-width: 100%;
 }
-
 /* iconos */
 
 .container1 {
